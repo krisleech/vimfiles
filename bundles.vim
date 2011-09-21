@@ -39,6 +39,7 @@ Bundle 'git://github.com/skammer/vim-css-color.git',
 Bundle "git://github.com/vim-scripts/Gist.vim.git",
 Bundle "git://github.com/vim-scripts/L9.git"
 Bundle "https://github.com/Bogdanp/rbrepl.vim"
+Bundle "https://github.com/rson/vim-conque"
 
 " Bundle "https://github.com/Lokaltog/vim-easymotion"
 " let g:EasyMotion_leader_key = '<Leader>t'
