@@ -1,4 +1,9 @@
 task :install do
+  unless File.exists?('~/.vim')
+    puts 'Vim does not appear to be installed'
+    exit
+  end
+
   root = File.expand_path(File.dirname(__FILE__))
 
   puts 'Install Bundles'
