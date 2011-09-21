@@ -11,12 +11,14 @@ In Normal mode (To enter press Esc or jj)
 Space - Search in file
 ,a    - Search in files (Ack)
 ,b    - Search open buffers (Fuzzy Finder)
+,Space - Remove search highlighting
 ,t    - Tags
 //    - Comment/uncomment (T-Comment)
 F5 - Undo history (GUndo)
 F6 - Auto format
 Tab - Next buffer
 Shift + Tab - Previous buffer
+,,  - Toggle between last two buffers
 
 In Insert mode
 
