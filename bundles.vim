@@ -49,5 +49,9 @@ Bundle "http://github.com/gmarik/snipmate.vim.git"
 Bundle "https://github.com/krisleech/snipmate-snippets"
 Bundle 'altercation/vim-colors-solarized'
 Bundle "jQuery"
+Bundle "https://github.com/kana/vim-textobj-user"
+Bundle "https://github.com/nelstrom/vim-textobj-rubyblock"
 
 filetype plugin indent on     " and turn it back on!
+
+runtime macros/matchit.vim    

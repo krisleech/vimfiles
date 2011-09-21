@@ -49,6 +49,13 @@ vim-rails
   Lots of stuff
   :help rails
 
+ruby-block
+  Allow selecting of blocks of Ruby code
+  var (visual around Ruby)
+  vir (visual inner Ruby)
+  ar / ir (expand/contract selection)
+  http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/
+
 vim-rvm              
   Add RVM integration
 
