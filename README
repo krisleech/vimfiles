@@ -1,22 +1,28 @@
 A pretty Ruby/Rails centric Vim 'distro' for MacOS
 
-Mappings
+Basic Mappings
 
 The leader is mapped to ,
 
-,p - File browser (NerbTree)
-,f - Find in Files (Commnand-T)
+In Normal mode (To enter press Esc or jj)
+
+,p - File browser (NerdTree)
+,f - Find in Files (Command-t)
 Space - Search in file
 ,a    - Search in files (Ack)
 ,b    - Search open buffers (Fuzzy Finder)
 ,t    - Tags
-//    - Comment/uncomment
+//    - Comment/uncomment (T-Comment)
 F5 - Undo history (GUndo)
 F6 - Auto format
+Tab - Next buffer
+Shift + Tab - Previous buffer
 
-Links
+In Insert mode
 
-http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
+jj - Back to normal mode
+
+See .vimrc for the rest.
 
 Plugins
 
@@ -25,7 +31,7 @@ Gist.vim (:Gist)
   Requires setting GITHUB_TOKEN and GITHUB_USER Env's
 
 gundo.vim (F5)
-  Navigate change history tree 
+  Navigate changes history tree 
   http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
 
 tabular
@@ -38,11 +44,19 @@ vim-fugitive
   http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
 
 vim-rails            
-  ,m Node - jump to Node model
+  Lots of stuff
   :help rails
 
 vim-rvm              
   Add RVM integration
+
+Conque
+  - Terminal/Interactive programs
+  :Conque zsh
+  :Conque ls
+  
+  Note you can also drop back to the terminal using Ctrl+Z, to get
+  back to Vim with %1. This is not a feature of Conque.
 
 vim-css-color        
 
@@ -108,22 +122,16 @@ brew install macvim --override-system-vim --enable-clipboard
 Add /usr/local/bin before /usr/bin in your $PATH so you use the version of brew
 installed by Homebrew, not the one that comes with MacOS.
 
+By installing Vim in this way MacVim and regular Vim are exactly the same.
+
 This Distro
 
 You will already have a ~/.vim folder, either delete or move it.
 
-I recommend cloning this repo (and any other you may like to try) to some
-directory other than ~/ and symlinking to the one you wish to use.
-
-I keep my vim distro's in ~/Applications/vim
-
-mkdir -p ~/Applications/vim
-cd ~/Applications/vim
-git clone THISREPOS rvim 
-cd rvim
+mv ~/.vim ~/.vim.old
+git clone THIS REPOS ~/.vim
+cd ~/.vim
 rake install
-mv ~/.vim ~/Applications/vim/original
-ln -s ~/Applications/vim/rvim ~/.vim
 
 Install Dependacies
 
@@ -133,12 +141,18 @@ brew install ctags
 Tested on MacOS, should work on an Unix-like OS. Just replace the use of brew
 with your package manager
 
+Helpful links
+
+http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
+
 Acknoladgements
 
 https://github.com/carlhuda/janus
 https://github.com/rson/vimfiles/blob/master/plugins.vim
+https://github.com/codegram/vimfiles
 #vim on freenode
   woldrich
+  spiiph
 
 
 
