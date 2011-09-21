@@ -1,0 +1,145 @@
+A pretty Ruby/Rails centric Vim 'distro' for MacOS
+
+Mappings
+
+The leader is mapped to ,
+
+,p - File browser (NerbTree)
+,f - Find in Files (Commnand-T)
+Space - Search in file
+,a    - Search in files (Ack)
+,b    - Search open buffers (Fuzzy Finder)
+,t    - Tags
+//    - Comment/uncomment
+F5 - Undo history (GUndo)
+F6 - Auto format
+
+Links
+
+http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
+
+Plugins
+
+Gist.vim (:Gist)
+  Gist current file/selection
+  Requires setting GITHUB_TOKEN and GITHUB_USER Env's
+
+gundo.vim (F5)
+  Navigate change history tree 
+  http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
+
+tabular
+  Align stuff
+  http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+
+vim-fugitive         
+  Git integration
+  :Gstatus and press - to stage file
+  http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
+
+vim-rails            
+  ,m Node - jump to Node model
+  :help rails
+
+vim-rvm              
+  Add RVM integration
+
+vim-css-color        
+
+vim-tcomment (//)
+  Comment stuff out
+
+jQuery               
+
+snipmate.vim (TAB)         
+  Snippets, press TAB to expand
+
+vim-autoclose
+vim-endwise          
+
+vim-yankring
+  Shows history of yanked (copied) text
+
+ack.vim              
+  Search project for words using ack
+  ,a word
+  ,a "some words"
+
+nerdtree (,p)             
+  Project file browser
+  I would recommend for speed using Command-t instead
+
+sparkup              
+vim-autocorrect
+
+vim-surround         
+  Allows adding/removing/changing of surroundings
+  yss <p>  - surround line in <p> tags
+
+vundle
+  Plugin manager
+
+command-t (,f)            
+  Find files in your project with partial matches
+  ,gf - file in files in current directory
+
+rbrepl.vim           
+  An Irb-like REPL
+
+syntastic
+
+vim-colors-solarized 
+  A colour scheme, both light and dark version
+  :set background=dark
+  :set background=light
+
+vim-fuzzyfinder (,b)
+  Find open buffer
+
+vim-taglist (,t)
+  Lists method names
+  
+
+INSTALLATION
+
+MacVim / Vim (if not already installed)
+
+brew install macvim --override-system-vim --enable-clipboard
+Add /usr/local/bin before /usr/bin in your $PATH so you use the version of brew
+installed by Homebrew, not the one that comes with MacOS.
+
+This Distro
+
+You will already have a ~/.vim folder, either delete or move it.
+
+I recommend cloning this repo (and any other you may like to try) to some
+directory other than ~/ and symlinking to the one you wish to use.
+
+I keep my vim distro's in ~/Applications/vim
+
+mkdir -p ~/Applications/vim
+cd ~/Applications/vim
+git clone THISREPOS rvim 
+cd rvim
+rake install
+mv ~/.vim ~/Applications/vim/original
+ln -s ~/Applications/vim/rvim ~/.vim
+
+Install Dependacies
+
+brew install ack
+brew install ctags
+
+Tested on MacOS, should work on an Unix-like OS. Just replace the use of brew
+with your package manager
+
+Acknoladgements
+
+https://github.com/carlhuda/janus
+https://github.com/rson/vimfiles/blob/master/plugins.vim
+#vim on freenode
+  woldrich
+
+
+
+
