@@ -142,6 +142,10 @@ git clone https://github.com/krisleech/vimfiles ~/.vim
 cd ~/.vim
 rake install
 
+or run:
+
+curl https://raw.github.com/krisleech/vimfiles/master/bootstrap.sh -o - | sh
+
 Install Dependacies
 
 brew install ack
