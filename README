@@ -138,7 +138,7 @@ This Distro
 You will already have a ~/.vim folder, either delete or move it.
 
 mv ~/.vim ~/.vim.old
-git clone THIS REPOS ~/.vim
+git clone https://github.com/krisleech/vimfiles ~/.vim
 cd ~/.vim
 rake install
 
