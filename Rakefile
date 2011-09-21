@@ -21,9 +21,18 @@ task :install do
   puts 'Install additional snippets'
 
   cmds = [
-"cd #{File.join(root, 'bundle', 'snipmate-snippets')}",
-"rake deploy_local"
+    "cd #{File.join(root, 'bundle', 'snipmate-snippets')}",
+    "rake deploy_local"
   ]
 
   system cmds.join(' && ')
+  puts 'Finished'
+end
+
+desc 'Update to latest and greatest'
+task :update do
+  system('git pull origin master') 
+  puts 'Install Bundles'
+  system "vim -c BundleInstall -c q -c q"
+  puts 'Finished'
 end
