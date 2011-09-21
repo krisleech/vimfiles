@@ -229,6 +229,9 @@ set nowritebackup
 set noswapfile
 syntax on
 
+set backupdir=~/tmp,/tmp
+set undodir=~/.vim/.tmp,~/tmp,~/.tmp,/tmp
+
 " BLAAAME
 vmap <Leader>gb :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
 
