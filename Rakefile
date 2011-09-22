@@ -1,7 +1,7 @@
 task :install do
   root = File.expand_path(File.dirname(__FILE__))
 
-  puts 'Install Bundles'
+  puts 'Installing Bundles'
   system "vim -c BundleInstall -c q -c q -u bundles.vim"
 
   puts 'Compile command-t extensions'
@@ -21,13 +21,25 @@ task :install do
   ]
 
   system cmds.join(' && ')
-  puts 'Finished'
+
+  puts '*' * 79
+  puts
+  puts 'All done!'
+  puts 'Be sure to checkout the helpful links in the README'
+  puts 'Issues/Wiki: https://github.com/krisleech/vimfiles'
+  puts
+  puts '*' * 79
 end
 
 desc 'Update to latest and greatest'
 task :update do
   system('git pull origin master') 
-  puts 'Install Bundles'
+  puts 'Installing Bundles'
   system "vim -c BundleInstall -c q -c q"
+
+  puts '*' * 79
+  puts
   puts 'Finished'
+  puts
+  puts '*' * 79
 end
