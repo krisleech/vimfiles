@@ -91,8 +91,7 @@ set showmatch
 set hlsearch
 " turn search highlight off
 nnoremap <leader><space> :noh<cr> 
-" find with space
-:nmap <Space> /
+nmap <space> /
 
 " Center screen when scrolling search results
 nmap n nzz
@@ -189,8 +188,12 @@ imap  <silent> <F6> <Esc> mmgg=G`m^zz
 "  ---------------------------------------------------------------------------
 
 " Command-T
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr> " find file
-map <leader>gf :CommandTFlush<cr>\|:CommandT %%<cr> " find file in current directory
+" find file
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+
+" find file in current directory
+map <leader>gf :CommandTFlush<cr>\|:CommandT %%<cr>
+
 let g:CommandTMaxHeight = 20
 
 " NERDTree
