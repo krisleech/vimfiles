@@ -123,7 +123,7 @@ imap jj <ESC>
 set grepprg=ack
 
 " ,a to Ack (search in files)
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack
 
 " Auto format
 map === mmgg=G`m^zz
