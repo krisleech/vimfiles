@@ -157,12 +157,16 @@ with your package manager
 Helpful links
 
 http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
+http://stevelosh.com/blog/2010/09/coming-home-to-vim/#important-vimrc-lines
+http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/
 
 Acknoladgements
 
 https://github.com/carlhuda/janus
 https://github.com/rson/vimfiles/blob/master/plugins.vim
 https://github.com/codegram/vimfiles
+https://www.destroyallsoftware.com/file-navigation-in-vim.html
+https://github.com/alexreisner/dotfiles/blob/master/.vimrc
 #vim on freenode
   woldrich
   spiiph
