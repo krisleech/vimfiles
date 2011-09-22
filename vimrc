@@ -91,7 +91,8 @@ set showmatch
 set hlsearch
 " turn search highlight off
 nnoremap <leader><space> :noh<cr> 
-:nmap <Space> / " find with space
+" find with space
+:nmap <Space> /
 
 " Center screen when scrolling search results
 nmap n nzz
@@ -206,8 +207,8 @@ map <leader>p :NERDTreeToggle<cr>
 map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
 
-" Buffer window
-nmap <silent> <leader>b :FufBuffer<CR> " find file in open buffers
+" Buffer window (find file in open buffers)
+nmap <silent> <leader>b :FufBuffer<CR>
 
 " AutoClose
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
