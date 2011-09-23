@@ -35,7 +35,7 @@ Bundle "git://github.com/tsaleh/vim-tcomment.git",
 Bundle "git://github.com/sjl/gundo.vim.git",
 Bundle "git://github.com/clones/vim-fuzzyfinder.git",
 Bundle "git://github.com/godlygeek/tabular.git",
-Bundle 'git://github.com/skammer/vim-css-color.git',
+"Bundle 'git://github.com/skammer/vim-css-color.git', " Having both this and Rails.vim causes slowness
 Bundle "git://github.com/vim-scripts/Gist.vim.git",
 Bundle "git://github.com/vim-scripts/L9.git"
 Bundle "https://github.com/Bogdanp/rbrepl.vim"
