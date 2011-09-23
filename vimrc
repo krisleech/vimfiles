@@ -141,7 +141,7 @@ nnoremap <C-l> <C-w>l
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
 " close buffer
-nmap <leader>d :bd<CR> 
+nmap <leader>d :bd<CR>
 " close all buffers
 nmap <leader>D :bufdo bd<CR>
 
