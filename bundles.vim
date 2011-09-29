@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 
 if !isdirectory(expand("~/.vim/bundle/vundle/.git"))
-  !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+  !git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 endif
 
 filetype off                   " must be off before Vundle has run
@@ -11,8 +11,8 @@ set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle "https://github.com/mileszs/ack.vim"
-Bundle "https://github.com/tpope/vim-rvm"
+Bundle "git://github.com/mileszs/ack.vim.git"
+Bundle "git://github.com/tpope/vim-rvm.git"
 Bundle "git://github.com/tpope/vim-fugitive",
 Bundle "git://github.com/tpope/vim-rails.git",
 Bundle "git://github.com/tpope/vim-surround.git",
@@ -37,16 +37,16 @@ Bundle "git://github.com/godlygeek/tabular.git",
 "Bundle 'git://github.com/skammer/vim-css-color.git', " Having both this and Rails.vim causes slowness
 Bundle "git://github.com/vim-scripts/Gist.vim.git",
 Bundle "git://github.com/vim-scripts/L9.git"
-Bundle "https://github.com/Bogdanp/rbrepl.vim"
-Bundle "https://github.com/rson/vim-conque"
+Bundle "git://github.com/Bogdanp/rbrepl.vim.git"
+Bundle "git://github.com/rson/vim-conque.git"
 " Bundle "https://github.com/Lokaltog/vim-easymotion"
 Bundle 'git://git.wincent.com/command-t.git'
-Bundle "http://github.com/gmarik/snipmate.vim.git"
-Bundle "https://github.com/krisleech/snipmate-snippets"
-Bundle 'altercation/vim-colors-solarized'
+Bundle "git://github.com/gmarik/snipmate.vim.git"
+Bundle "git://github.com/krisleech/snipmate-snippets.git"
+Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 Bundle "jQuery"
-Bundle "https://github.com/kana/vim-textobj-user"
-Bundle "https://github.com/nelstrom/vim-textobj-rubyblock"
+Bundle "git://github.com/kana/vim-textobj-user.git"
+Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
 
 filetype plugin indent on     " and turn it back on!
 
