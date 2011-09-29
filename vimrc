@@ -178,6 +178,13 @@ vmap <C-c> "+y
 "  Function Keys
 "  ---------------------------------------------------------------------------
 
+" F2 - Terminal
+map <F2> :ConqueTerm zsh<CR>
+
+" F3 - YankRing
+nnoremap <silent> <F3> :YRShow<cr>
+inoremap <silent> <F3> <ESC>:YRShow<cr>
+
 " Press F5 to toggle GUndo tree
 nnoremap <F5> :GundoToggle<CR>
 
