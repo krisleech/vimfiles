@@ -1,30 +1,49 @@
 A pretty Ruby/Rails centric Vim 'distro' for MacOS
 
+Vim terminology
+
+File   - a file (on disk)
+Buffer - a file (in memory)
+Window - a view of a buffer, can contain multiple buffers using splits
+Tab    - a collection of windows, I recommend not using tabs
+Frame  - contains everything
+
+Introduction to Vim: http://blog.interlinked.org/tutorials/vim_tutorial.html
+
 Basic Mappings
 
 The leader is mapped to ,
 
-In Normal mode (To enter press Esc or jj)
+In Normal mode (Esc or jj)
 
-,p - File browser (NerdTree)
-,f - Find in Files (Command-t)
-Space - Search in file
+,p    - File browser (NerdTree)
+,f    - Find in Files (Command-t)
+Space - Search in buffer
 ,a    - Search in files (Ack)
 ,b    - Search open buffers (Fuzzy Finder)
+,d    - close buffer
+,D    - close all buffers
 ,Space - Remove search highlighting
-,t    - Tags
+,t    - Show tags
 //    - Comment/uncomment (T-Comment)
-F5 - Undo history (GUndo)
-F6 - Auto format
-Tab - Next buffer
+F5    - Undo history (GUndo)
+F6    - Auto format
+Tab   - Next buffer
 Shift + Tab - Previous buffer
 ,,  - Toggle between last two buffers
+,m  - Jump to model
+,v  - Jump to view
+,gm - Find in app/models
+,gc - Find in app/controller
+,gv - Find in app/views
+,gr - Open routes in split
+,gg - Open Gemfile in split
 
-In Insert mode
+In Insert mode (i)
 
 jj - Back to normal mode
 
-See .vimrc for the rest.
+See .vimrc for more.
 
 Plugins
 
@@ -47,6 +66,8 @@ vim-fugitive
 
 vim-rails            
   Lots of stuff
+  :Rmodel - jump to model
+  :Rview
   :help rails
 
 ruby-block
@@ -95,16 +116,25 @@ nerdtree (,p)
 sparkup              
 vim-autocorrect
 
-vim-surround         
+vim-surround (ys/cs/ds)
   Allows adding/removing/changing of surroundings
+
+  Characters
+  ysiw)    - surround inner word with ()
+  ysiw(    - surround inner word with (  )
+  cs"'     - change surrounding from " to '
+  ds       - delete surrounding
+
+  Tags
   yss <p>  - surround line in <p> tags
+  cst<div> - change surround tag to <div>
 
 vundle
   Plugin manager
 
 command-t (,f)            
   Find files in your project with partial matches
-  ,gf - file in files in current directory
+  ,gf - find files in directory of current buffer
 
 rbrepl.vim           
   An Irb-like REPL
