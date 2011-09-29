@@ -12,12 +12,14 @@ silent! runtime bundles.vim
 
 filetype plugin indent on     
 let mapleader = ","
+let g:mapleader = ","
 set modelines=0
 set history=1000
 set nobackup
 set nowritebackup
 set noswapfile
 syntax enable
+set autoread
 
 "  ---------------------------------------------------------------------------
 "  UI
