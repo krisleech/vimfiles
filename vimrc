@@ -312,3 +312,10 @@ set shell=/bin/sh
 if filereadable(my_home . '.vimrc.local')
   source ~/.vimrc.local
 endif
+
+"  ---------------------------------------------------------------------------
+"  Misc
+"  ---------------------------------------------------------------------------
+
+" When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/.vimrc
