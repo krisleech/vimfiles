@@ -180,8 +180,14 @@ curl https://raw.github.com/krisleech/vimfiles/master/bootstrap.sh -o - | sh
 
 Install Dependacies
 
+MacOS
+
 brew install ack
 brew install ctags
+
+Ubuntu
+
+sudo apt-get install exuberant-ctags
 
 Tested on MacOS, should work on an Unix-like OS. Just replace the use of brew
 with your package manager
