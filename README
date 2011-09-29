@@ -38,6 +38,8 @@ Shift + Tab - Previous buffer
 ,gv - Find in app/views
 ,gr - Open routes in split
 ,gg - Open Gemfile in split
+,vir - Visual select inner Ruby block
+,var - Visual select around Ruby block
 
 In Insert mode (i)
 
