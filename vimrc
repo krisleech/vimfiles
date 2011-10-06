@@ -93,7 +93,10 @@ set showmatch
 set hlsearch
 " turn search highlight off
 nnoremap <leader><space> :noh<cr> 
+" search (forwards)
 nmap <space> /
+" search (backwards)
+map <c-space> ?
 
 " Center screen when scrolling search results
 nmap n nzz
