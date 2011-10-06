@@ -1,12 +1,9 @@
-A pretty Ruby/Rails centric Vim 'distro' for MacOS
+A pretty Ruby/Rails centric Vim 'distro' for MacOS/Linux
 
-Vim terminology
+Requirements
 
-File   - a file (on disk)
-Buffer - a file (in memory)
-Window - a view of a buffer, can contain multiple buffers using splits
-Tab    - a collection of windows, I recommend not using tabs
-Frame  - contains everything
+Vim 7.3 or better
+Tested on MacOS and Linux
 
 Introduction to Vim: http://blog.interlinked.org/tutorials/vim_tutorial.html
 
@@ -207,9 +204,8 @@ brew install ctags
 Ubuntu
 
 sudo apt-get install exuberant-ctags
-
-Tested on MacOS, should work on an Unix-like OS. Just replace the use of brew
-with your package manager
+sudo apt-get install ack-grep
+sudo ln -s /usr/bin/ack-grep /usr/local/bin/ack
 
 Helpful links
 
@@ -228,7 +224,3 @@ http://items.sjbach.com/319/configuring-vim-right
 #vim on freenode
   woldrich
   spiiph
-
-
-
-
