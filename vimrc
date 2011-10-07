@@ -278,7 +278,7 @@ map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
 
 " Skip to Models and Views
-map <Leader>m :Rmodel
+map <Leader>m :Rmodel 
 map <Leader>v :Rview 
 
 "  ---------------------------------------------------------------------------
