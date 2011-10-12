@@ -1,17 +1,17 @@
-A pretty Ruby/Rails centric Vim 'distro' for MacOS/Linux
+# A pretty Ruby/Rails centric Vim 'distro' for MacOS/Linux
 
-Requirements
+## Requirements
 
 Vim 7.3 or better
 Tested on MacOS and Linux
 
 Introduction to Vim: http://blog.interlinked.org/tutorials/vim_tutorial.html
 
-Basic Mappings
+## Basic Mappings
 
 The leader is mapped to ,
 
-In Normal mode (Esc or jj)
+*In Normal mode* (Esc or jj)
 
 ,p    - File browser (NerdTree)
 ,f    - Find in Files (Command-t)
@@ -38,13 +38,13 @@ Shift + Tab - Previous buffer
 ,vir - Visual select inner Ruby block
 ,var - Visual select around Ruby block
 
-In Insert mode (i)
+*In Insert mode* (i)
 
 jj - Back to normal mode
 
 See .vimrc for more.
 
-Plugins
+## Plugins
 
 Gist.vim (:Gist)
   Gist current file/selection
@@ -152,7 +152,7 @@ vim-taglist (,t)
   Lists method names
   
 
-INSTALLATION
+## INSTALLATION
 
 Note: If you already have Vim installed ensure it has support for Ruby:
 vim --version | grep ruby
@@ -217,13 +217,13 @@ sudo apt-get install exuberant-ctags
 sudo apt-get install ack-grep
 sudo ln -s /usr/bin/ack-grep /usr/local/bin/ack
 
-Helpful links
+## Helpful links
 
 http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
 http://stevelosh.com/blog/2010/09/coming-home-to-vim/#important-vimrc-lines
 http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/
 
-Acknoladgements
+## Acknoladgements
 
 https://github.com/carlhuda/janus
 https://github.com/rson/vimfiles/blob/master/plugins.vim
