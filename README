@@ -154,6 +154,11 @@ vim-taglist (,t)
 
 INSTALLATION
 
+Note: If you already have Vim installed ensure it has support for Ruby:
+vim --version | grep ruby
+
+You should see +ruby, if you see -ruby you need to reinstall Vim with Ruby support
+
 MacOS: MacVim / Vim (if not already installed)
 
 brew install macvim --override-system-vim --enable-clipboard
@@ -164,7 +169,7 @@ By installing Vim in this way MacVim and regular Vim are exactly the same.
 
 Ubuntu: gVim / Vim
 
-I have no experience with gVim, only regular Vim on Ubuntu
+I have no experience with gVim, only regular Vim on Ubuntu:
 
 sudo apt-get install vim-nox
 
@@ -183,7 +188,7 @@ This installs Vim to /usr/local/bin, check this is in your $PATH before /usr/bin
 
 This Distro
 
-You will already have a ~/.vim folder, either delete or move it.
+Note: You will already have a ~/.vim folder, either delete or move it.
 
 mv ~/.vim ~/.vim.old
 git clone https://github.com/krisleech/vimfiles ~/.vim
@@ -193,6 +198,11 @@ rake install
 or run:
 
 curl https://raw.github.com/krisleech/vimfiles/master/bootstrap.sh -o - | sh
+
+To update your Distro run at a later time
+
+cd ~/.vim
+rake update
 
 Install Dependacies
 
