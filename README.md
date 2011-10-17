@@ -46,120 +46,137 @@ See .vimrc for more.
 
 ## Plugins
 
-Gist.vim (:Gist)
+### Gist.vim (:Gist)
 
->  Gist current file/selection
->  Requires setting GITHUB_TOKEN and GITHUB_USER Env's
+Gist current file/selection
 
-gundo.vim (F5)
+Requires setting GITHUB_TOKEN and GITHUB_USER Env's
 
->  Navigate changes history tree 
->  http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
+### gundo.vim (F5)
 
-tabular
+Navigate changes history tree 
 
->  Align stuff
->  http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
 
-vim-fugitive         
+### tabular
 
->  Git integration
->  :Gstatus and press - to stage file
->  http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
+Align stuff
 
-vim-rails            
+http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
->  *Lots* of stuff
-> :Rmodel - jump to model
-> :Rview
-> :help rails
+### vim-fugitive         
 
-ruby-block
+Git integration
 
->  Allow selecting of blocks of Ruby code
->  var (visual around Ruby)
->  vir (visual inner Ruby)
->  ar / ir (expand/contract selection)
->  http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/
+:Gstatus and press - to stage file
+http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
 
-vim-rvm              
+### vim-rails            
 
->  Add RVM integration
+*Lots* of stuff
 
-Conque
+:Rmodel - jump to model
+:Rview
+:help rails
 
-> Terminal/Interactive programs
-> :Conque zsh
-> :Conque ls
+### ruby-block
+
+Allow selecting of blocks of Ruby code
+
+var (visual around Ruby)
+vir (visual inner Ruby)
+ar / ir (expand/contract selection)
+http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/
+
+### vim-rvm              
+
+Add RVM integration
+
+### Conque
+
+Terminal/Interactive programs
+:Conque zsh
+:Conque ls
   
-  Note you can also drop back to the terminal using Ctrl+Z, to get
-  back to Vim with %1. This is not a feature of Conque.
+Note you can also drop back to the terminal using Ctrl+Z, to get
+back to Vim with ```%1```. This is not a feature of Conque.
 
-vim-tcomment (//)
+### vim-tcomment (//)
 
-> Comment stuff out
+Comment stuff out
 
-snipmate.vim (TAB)         
+### snipmate.vim (TAB)         
 
->  Snippets, press TAB to expand
+Snippets, press TAB to expand
+def<tab>
 
-vim-yankring
+### vim-yankring
 
->  Shows history of yanked (copied) text
+Shows history of yanked (copied) text
 
-ack.vim              
+### ack.vim              
 
->  Search project for text (aka find in files)
->  ,a word
->  ,a "some words"
+Search project for text (aka find in files)
+,a word
+,a "some words"
 
-nerdtree (,p)             
+### nerdtree (,p)             
 
-> Project file browser
-> I would recommend for speed using Command-t instead
+Project file browser
 
-sparkup (ctrl+e)
+I would recommend for speed using Command-t instead
 
-> Expand div.event in to <div class='event'></div>
+### sparkup (ctrl+e)
 
-vim-surround (ys/cs/ds)
+Expand div.event in to <div class='event'></div>
 
->  Allows adding/removing/changing of surroundings
+### vim-surround (ys/cs/ds)
 
-  Characters
+Allows adding/removing/changing of surroundings
+I would highly recommend getting to know this plugin, it is very useful.
+Especially when you grok text objects.
 
-> ysiw)    - surround inner word with ()
-> ysiw(    - surround inner word with (  )
-> cs"'     - change surrounding from " to '
-> ds       - delete surrounding
+*Characters*
 
-  Tags
+ysiw)    - surround inner word with ()
+ysiw(    - surround inner word with (  )
 
-> yss <p>  - surround line in <p> tags
-> cst<div> - change surround tag to <div>
+In the above example ```iw``` can be replaced with any text object.
 
-vundle
+If you find yourself manually adding surroundings, stop and work out the
+correct text object.
 
->  Plugin manager
+cs"'     - change surrounding from " to '
+ds       - delete surrounding
 
-command-t (,f)            
+*Tags*
 
->  Find files in your project with partial matches
->  ,gf - find files in directory of current buffer
+yss<p>  - surround line in ```<p>``` tags
+cst<div> - change surround tag to ```<div>```
 
-vim-colors-solarized 
+### vundle
 
->  A colour scheme, both light and dark version
->  :set background=dark
->  :set background=light
+Plugin manager
 
-vim-fuzzyfinder (,b)
+### command-t (,f)            
 
->  Find open buffer
+Find files in your project with partial matches
+,gf - find files in directory of current buffer
 
-vim-taglist (,t)
+### vim-colors-solarized 
 
->  Lists method names
+A colour scheme, both light and dark version
+
+:set background=dark
+:set background=light
+
+### vim-fuzzyfinder (,b)
+
+Find open buffer
+
+### vim-taglist (,t)
+
+Lists method names
 
 ## INSTALLATION
 
@@ -171,9 +188,9 @@ vim --version | grep ruby
 
 You should see +ruby, if you see -ruby you need to reinstall Vim with Ruby support
 
-### Install Vim
+### Install Vim (if not already installed)
 
-#### MacOS: MacVim / Vim (if not already installed)
+#### MacOS: MacVim / Vim 
 
 ```
 brew install macvim --override-system-vim --enable-clipboard
@@ -191,11 +208,16 @@ I have no experience with gVim, only regular Vim on Ubuntu:
 sudo apt-get install vim-nox
 ```
 
-If you have an old Ubuntu distro which does not have Vim 7.3 or better in its repos then install from source:
+#### GNU/Linux from source
+
+If you have an old GNU/Linux distro which does not have Vim 7.3 or better in its repos then install from source:
+
 The configure options below leave out any GUI related features as I have only compiled Vim on a server.
 
+Vim source is in a hg (Mercurial) repository so you need to install the hg
+client first, e.g.  ```sudo apt-get install mercurial```
+
 ```
-sudo apt-get install mercurial
 hg clone https://vim.googlecode.com/hg/ vim
 cd vim/vim73
 ./configure
