@@ -41,16 +41,6 @@ Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
 Bundle "https://github.com/ervandew/supertab"
 Bundle "jQuery"
 
-" Experimental Bundles
-" Bundle "https://github.com/Lokaltog/vim-easymotion"
-" Bundle 'git://github.com/plasticboy/vim-markdown.git',
-" Bundle "git://github.com/tpope/vim-haml.git",
-" Bundle "git://github.com/tpope/vim-cucumber.git",
-" Bundle "git://github.com/tpope/vim-speeddating",
-" Bundle "git://github.com/codegram/vim-todo.git",
-" Bundle "git://github.com/codegram/vim-numberlock.git",
-"Bundle 'git://github.com/skammer/vim-css-color.git', " Having both this and Rails.vim causes slowness
-
 filetype plugin indent on     " and turn it back on!
 
 runtime macros/matchit.vim    
