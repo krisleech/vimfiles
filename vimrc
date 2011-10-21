@@ -163,12 +163,6 @@ nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
 
-" Set the tag file search order
-set tags=./tags;
-let Tlist_WinWidth = 60
-
-" Use only current file to autocomplete from tags
-set complete=.,t
 
 " EXTERNAL COPY / PASTE
 " Press F2 before and after pasting from an external Window, not required for
@@ -219,8 +213,14 @@ let NERDTreeWinSize = 50
 map <leader>p :NERDTreeToggle<cr>
 
 " TagList
+set tags=./tags;
 map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 60
+
+" Use only current file to autocomplete from tags
+" set complete=.,t
+set complete=.,w,b,u,t,i
 
 " Buffer window (find file in open buffers)
 nmap <silent> <leader>b :FufBuffer<CR>
@@ -257,7 +257,7 @@ vnoremap // :TComment<CR>
 " Supertab
 " let g:SuperTabDefaultCompletionType = "context"
 " let g:SuperTabDefaultCompletionType = "user"
-" let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 "  ---------------------------------------------------------------------------
 "  Ruby/Rails
