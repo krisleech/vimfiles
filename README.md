@@ -1,5 +1,7 @@
 # Ruby/Rails centric vimfiles and installer
 
+With a great colour scheme and support for auto-complete, git, rvm and sparkup.
+
 ## Requirements
 
 Vim 7.3 or better
@@ -71,36 +73,6 @@ See `.vimrc` for more.
 
 ## Plugins
 
-### Gist.vim (`:Gist`)
-
-Gist current file/selection
-
-Requires setting GITHUB_TOKEN and GITHUB_USER Env's
-
-### gundo.vim (`F5`)
-
-Navigate changes history tree 
-
-http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
-
-### tabular
-
-Align stuff
-
-http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
-
-### vim-fugitive         
-
-Git integration
-
-*Lots* of stuff
-
-`:Gstatus` and press `-` to stage file
-
-http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
-
-`:help fugitive`
-
 ### vim-rails            
 
 *Lots* of stuff
@@ -123,25 +95,33 @@ Allow selecting of blocks of Ruby code
 
 http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/
 
+### sparkup (`ctrl+e`)
+
+Expand CSS selectors `div.event` in to markup `<div class='event'></div>`
+
+http://net.tutsplus.com/articles/general/quick-tip-even-quicker-markup-with-sparkup/
+
+### vim-fugitive         
+
+Git integration
+
+*Lots* of stuff
+
+`:Gstatus` and press `-` to stage file
+
+http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
+
+`:help fugitive`
+
 ### vim-rvm              
 
 Add RVM integration
 
-### Conque
+### command-t (`,f`)            
 
-Terminal/Interactive programs
+Find files in your project with partial matches
 
-`:Conque zsh`
-
-`:Conque ls`
-
-  
-Note you can also drop back to the terminal using Ctrl+Z, to get
-back to Vim with `%1`. This is not a feature of Conque.
-
-### vim-tcomment (`//`)
-
-Comment stuff out
+`,gf` - find files in directory of current buffer
 
 ### snipmate.vim (`TAB`)         
 
@@ -157,9 +137,45 @@ Examples:
 
 `ife<tab>`
 
+### Gist.vim (`:Gist`)
+
+Gist current file/selection
+
+Requires setting GITHUB_TOKEN and GITHUB_USER Env's
+
+### gundo.vim (`F5`)
+
+Navigate changes history tree 
+
+http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
+
+### tabular
+
+Align stuff
+
+http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+
+### Conque
+
+Terminal/Interactive programs
+
+`:Conque zsh`
+
+`:Conque ls`
+
+  
+Note you can also drop back to the terminal using Ctrl+Z, to get
+back to Vim with `%1`. This is not a feature of Conque.
+
+### vim-tcomment (`//`)
+
+Comment/Uncomment stuff out
+
 ### vim-yankring
 
 Shows history of yanked (copied) text
+
+Pressing `ctrl + p` will also cycle through paste history
 
 ### ack.vim (`,a`)
 
@@ -174,12 +190,6 @@ Search project for text (aka find in files)
 Project file browser
 
 I would recommend for speed using Command-t instead
-
-### sparkup (`ctrl+e`)
-
-Expand CSS selectors `div.event` in to markup `<div class='event'></div>`
-
-http://net.tutsplus.com/articles/general/quick-tip-even-quicker-markup-with-sparkup/
 
 ### vim-surround (`ys`/`cs`/`ds`)
 
@@ -209,16 +219,6 @@ correct text object or motion.
 
 `cst<div>` - change surround tag to `<div>`
 
-### vundle
-
-Plugin manager
-
-### command-t (`,f`)            
-
-Find files in your project with partial matches
-
-`,gf` - find files in directory of current buffer
-
 ### vim-colors-solarized 
 
 A colour scheme, both light and dark version
@@ -236,6 +236,10 @@ Find open buffer by path/filename
 Lists method names, provide auto complete
 
 Run `ctags -R` in project root to generate tags
+
+### vundle
+
+Plugin manager
 
 ## INSTALLATION
 
@@ -329,4 +333,3 @@ or run:
 - #vim on freenode
  - woldrich
  - spiiph
-
