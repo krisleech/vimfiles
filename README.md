@@ -9,6 +9,10 @@ Tested on MacOS and Linux
 
 Introduction to Vim: http://blog.interlinked.org/tutorials/vim_tutorial.html
 
+## Quick Install
+
+    curl https://raw.github.com/krisleech/vimfiles/master/bootstrap.sh -o - | sh
+
 ## Basic Mappings
 
 The leader is mapped to ,
