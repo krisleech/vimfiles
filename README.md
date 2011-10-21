@@ -65,17 +65,19 @@ The leader is mapped to ,
 
 `jj` - Back to normal mode
 
+`<tab>` - auto complete or expand snippet
+
 See `.vimrc` for more.
 
 ## Plugins
 
-### Gist.vim (:Gist)
+### Gist.vim (`:Gist`)
 
 Gist current file/selection
 
 Requires setting GITHUB_TOKEN and GITHUB_USER Env's
 
-### gundo.vim (F5)
+### gundo.vim (`F5`)
 
 Navigate changes history tree 
 
@@ -133,21 +135,29 @@ Terminal/Interactive programs
 Note you can also drop back to the terminal using Ctrl+Z, to get
 back to Vim with `%1`. This is not a feature of Conque.
 
-### vim-tcomment (//)
+### vim-tcomment (`//`)
 
 Comment stuff out
 
-### snipmate.vim (TAB)         
+### snipmate.vim (`TAB`)         
 
 Snippets, press `TAB` to expand
 
+Examples:
+
 `def<tab>`
+
+`.each<tab>`
+
+`.eado<tab>`
+
+`ife<tab>`
 
 ### vim-yankring
 
 Shows history of yanked (copied) text
 
-### ack.vim (,a)
+### ack.vim (`,a`)
 
 Search project for text (aka find in files)
 
@@ -155,19 +165,19 @@ Search project for text (aka find in files)
 
 `,a "some words"`
 
-### nerdtree (,p)             
+### nerdtree (`,p`)             
 
 Project file browser
 
 I would recommend for speed using Command-t instead
 
-### sparkup (ctrl+e)
+### sparkup (`ctrl+e`)
 
 Expand CSS selectors `div.event` in to markup `<div class='event'></div>`
 
 http://net.tutsplus.com/articles/general/quick-tip-even-quicker-markup-with-sparkup/
 
-### vim-surround (ys/cs/ds)
+### vim-surround (`ys`/`cs`/`ds`)
 
 Allows adding/removing/changing of surroundings
 
@@ -199,7 +209,7 @@ correct text object or motion.
 
 Plugin manager
 
-### command-t (,f)            
+### command-t (`,f`)            
 
 Find files in your project with partial matches
 
@@ -213,13 +223,15 @@ A colour scheme, both light and dark version
 
 `:set background=light`
 
-### vim-fuzzyfinder (,b)
+### vim-fuzzyfinder (`,b`)
 
 Find open buffer by path/filename
 
-### vim-taglist (,t)
+### vim-taglist (`,l`)
 
-Lists method names
+Lists method names, provide auto complete
+
+Run `ctags -R` in project root to generate tags
 
 ## INSTALLATION
 
