@@ -73,7 +73,7 @@ See `.vimrc` for more.
 
 ## Plugins
 
-### vim-rails            
+### rails            
 
 *Lots* of stuff
 
@@ -101,7 +101,7 @@ Expand CSS selectors `div.event` in to markup `<div class='event'></div>`
 
 http://net.tutsplus.com/articles/general/quick-tip-even-quicker-markup-with-sparkup/
 
-### vim-fugitive         
+### fugitive         
 
 Git integration
 
@@ -127,7 +127,7 @@ Find files in your project with partial matches
 
 Snippets, press `TAB` to expand
 
-Examples:
+Examples (in a Ruby file):
 
 `def<tab>`
 
@@ -137,7 +137,7 @@ Examples:
 
 `ife<tab>`
 
-### Gist.vim (`:Gist`)
+### gist.vim (`:Gist`)
 
 Gist current file/selection
 
@@ -155,7 +155,7 @@ Align stuff
 
 http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
-### Conque
+### conque
 
 Terminal/Interactive programs
 
@@ -167,11 +167,11 @@ Terminal/Interactive programs
 Note you can also drop back to the terminal using Ctrl+Z, to get
 back to Vim with `%1`. This is not a feature of Conque.
 
-### vim-tcomment (`//`)
+### tcomment (`//`)
 
 Comment/Uncomment stuff out
 
-### vim-yankring
+### yankring
 
 Shows history of yanked (copied) text
 
@@ -191,7 +191,7 @@ Project file browser
 
 I would recommend for speed using Command-t instead
 
-### vim-surround (`ys`/`cs`/`ds`)
+### surround (`ys`/`cs`/`ds`)
 
 Allows adding/removing/changing of surroundings
 
@@ -219,7 +219,7 @@ correct text object or motion.
 
 `cst<div>` - change surround tag to `<div>`
 
-### vim-colors-solarized 
+### solarized 
 
 A colour scheme, both light and dark version
 
@@ -227,11 +227,11 @@ A colour scheme, both light and dark version
 
 `:set background=light`
 
-### vim-fuzzyfinder (`,b`)
+### fuzzyfinder (`,b`)
 
 Find open buffer by path/filename
 
-### vim-taglist (`,l`)
+### taglist (`,l`)
 
 Lists method names, provide auto complete
 
@@ -239,7 +239,7 @@ Run `ctags -R` in project root to generate tags
 
 ### vundle
 
-Plugin manager
+Plugin manager and part of the reason why my vimfiles as so compact
 
 ## INSTALLATION
 
@@ -254,20 +254,25 @@ You should see `+ruby,` if you see `-ruby` you need to reinstall Vim with Ruby s
 #### MacOS: MacVim / Vim 
 
     brew install macvim --override-system-vim --enable-clipboard
-    Add /usr/local/bin before /usr/bin in your $PATH so you use the version of brew
-    installed by Homebrew, not the one that comes with MacOS.
+
+Add `/usr/local/bin` before `/usr/bin` in your `$PATH` so you use the version of
+vim installed by Homebrew, not the one that comes with MacOS.
 
 By installing Vim in this way MacVim and regular Vim are exactly the same.
 
 #### Ubuntu: gVim / Vim
 
-I have no experience with gVim, only regular Vim on Ubuntu:
+*Server*
 
-    sudo apt-get install vim-nox
+    apt-get install vim-nox
+
+*Desktop*
+
+    apt-get install vim-gnome
 
 #### GNU/Linux from source
 
-If you have an old GNU/Linux distro which does not have Vim 7.3 or better in its repos then install from source:
+If you have an old GNU/Linux distro which does not have Vim 7.3 or better in its repos then install from source.
 
 The configure options below leave out any GUI related features as I have only compiled Vim on a server.
 
@@ -281,11 +286,11 @@ client first, e.g.  `sudo apt-get install mercurial`.
     make
     sudo make install
 
-This installs Vim to /usr/local/bin, check this is in your $PATH before /usr/bin which may contain an older system version of Vim.
+This installs Vim to `/usr/local/bin,` check this is in your `$PATH` before `/usr/bin` which may contain an older system version of Vim.
 
-### Install this Distro
+### Install these vimfiles
 
-Note: You will already have a ~/.vim folder, either delete or move it.
+Note: You will already have a `~/.vim` folder, either delete or move it.
 
     mv ~/.vim ~/.vim.old
     git clone https://github.com/krisleech/vimfiles ~/.vim
@@ -296,7 +301,7 @@ or run:
 
     curl https://raw.github.com/krisleech/vimfiles/master/bootstrap.sh -o - | sh
 
-#### To update your Distro run at a later time
+#### To update to the latest vimfiles
 
     cd ~/.vim
     rake update
@@ -307,6 +312,8 @@ or run:
 
     brew install ack
     brew install ctags
+
+Note: MacOS comes with the BSD version of ctags which is not compatible.
 
 *Ubuntu*
 
@@ -324,6 +331,7 @@ or run:
 
 ## Acknowledgments
 
+- Tim Pope (of course) http://tpo.pe/
 - https://github.com/carlhuda/janus
 - https://github.com/rson/vimfiles/blob/master/plugins.vim
 - https://github.com/codegram/vimfiles
