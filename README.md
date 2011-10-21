@@ -93,9 +93,13 @@ http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
 
 Git integration
 
+*Lots* of stuff
+
 `:Gstatus` and press `-` to stage file
 
 http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
+
+`:help fugitive`
 
 ### vim-rails            
 
@@ -103,7 +107,7 @@ http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
 
 `:Rmodel` - jump to model
 
-`:Rview`
+`:Rview` - jump to view
 
 `:help rails`
 
