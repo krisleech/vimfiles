@@ -247,6 +247,10 @@ Plugin manager and part of the reason why my vimfiles as so compact
 
 ## INSTALLATION
 
+Note: If you are using RVM make sure you use system ruby before installation.
+    
+    rvm use system
+
 Note: If you already have Vim installed ensure it has support for Ruby:
 
     vim --version | grep ruby
