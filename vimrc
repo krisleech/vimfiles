@@ -129,6 +129,8 @@ set grepprg=ack
 " ,a to Ack (search in files)
 nnoremap <leader>a :Ack 
 
+" Ack settings: https://github.com/krisleech/vimfiles/wiki/Make-ack-ignore-files
+
 " Auto format
 map === mmgg=G`m^zz
 
