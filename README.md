@@ -15,7 +15,7 @@ Introduction to Vim: http://blog.interlinked.org/tutorials/vim_tutorial.html
 
 ## Basic Mappings
 
-The leader is mapped to ,
+The leader is mapped to `,`
 
 ### In Normal mode (`Esc` or `jj`)
 
@@ -37,7 +37,7 @@ The leader is mapped to ,
 
 `,t`     - Show tags
 
-`//`     - Comment/uncomment (T-Comment)
+`//`     - Toggle comments (T-Comment)
 
 `F5`     - Undo history (GUndo)
 
@@ -79,7 +79,7 @@ See `.vimrc` for more.
 
 ### rails            
 
-*Lots* of stuff
+*Lots* of stuff - get to know this plugin
 
 `:Rmodel` - jump to model
 
@@ -89,13 +89,17 @@ See `.vimrc` for more.
 
 ### ruby-block
 
-Allow selecting of blocks of Ruby code
+Provides text-objects for Ruby blocks
 
 `var` (visual around Ruby)
 
 `vir` (visual inner Ruby)
 
 `ar` / `ir` (expand/contract selection)
+
+`cir` (change inner Ruby)
+
+`dar` (delete around Ruby)
 
 http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/
 
@@ -117,7 +121,7 @@ http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/
 
 `:help fugitive`
 
-### vim-rvm              
+### rvm              
 
 Add RVM integration
 
@@ -127,7 +131,7 @@ Find files in your project with partial matches
 
 `,gf` - find files in directory of current buffer
 
-### snipmate.vim (`TAB`)         
+### snipmate (`TAB`)         
 
 Snippets, press `TAB` to expand
 
@@ -141,13 +145,13 @@ Examples (in a Ruby file):
 
 `ife<tab>`
 
-### gist.vim (`:Gist`)
+### gist (`:Gist`)
 
 Gist current file/selection
 
 Requires setting GITHUB_TOKEN and GITHUB_USER Env's
 
-### gundo.vim (`F5`)
+### gundo (`F5`)
 
 Navigate changes history tree 
 
@@ -181,7 +185,7 @@ Shows history of yanked (copied) text
 
 Pressing `ctrl + p` will also cycle through paste history
 
-### ack.vim (`,a`)
+### ack (`,a`)
 
 Search project for text (aka find in files)
 
