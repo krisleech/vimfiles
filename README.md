@@ -127,9 +127,19 @@ Add RVM integration
 
 ### command-t (`,f`)            
 
-Find files in your project with partial matches
+Find files in your project with minimal keypresses
 
-`,gf` - find files in directory of current buffer
+For example `conadus` would find `controllers/admin/users`
+
+`,f path_or_filename`
+
+`,gf path_or_filename` - restrict to files in current directory
+
+`Ctrl + n` - next result
+
+`Ctrl + p` - previous result
+
+`Ctrl + c` - cancel
 
 ### snipmate (`TAB`)         
 
@@ -197,7 +207,16 @@ Search project for text (aka find in files)
 
 Project file browser
 
-I would recommend for speed using Command-t instead
+`,p` opens file browser
+
+`o` / `x` open and close files/folders
+
+`m` menu to move/delete/copy files/folders
+
+`?` Help
+
+I use nerdtree for creating or moving files, but find command-t quicker for
+opening files.
 
 ### surround (`ys`/`cs`/`ds`)
 
