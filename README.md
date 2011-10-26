@@ -79,7 +79,7 @@ See `.vimrc` for more.
 
 ### rails            
 
-*Lots* of stuff - get to know this plugin
+*Lots* of stuff - get to know this plugin!
 
 `:Rmodel` - jump to model
 
@@ -354,6 +354,7 @@ Note: MacOS comes with the BSD version of ctags which is not compatible.
 
 ## Helpful Stuff
 
+- https://github.com/krisleech/vimfiles/wiki
 - http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
 - http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/
 - http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
