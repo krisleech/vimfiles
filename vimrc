@@ -45,11 +45,15 @@ set number
 set relativenumber
 set undofile
 
-" Auto adjust window sizes when they become current
-set winwidth=84
-set winheight=5
-set winminheight=5
-set winheight=999
+set winheight=999 " split window heights
+set previewheight=50
+" hack from here http://stackoverflow.com/questions/3712725/can-i-change-vim-completion-preview-window-height
+au BufEnter ?* call PreviewHeightWorkAround()
+func PreviewHeightWorkAround()
+	if &previewwindow
+		exec 'setlocal winheight='.&previewheight
+	endif
+endfunc
 
 colorscheme solarized
 set background=light " or dark
@@ -324,4 +328,4 @@ endif
 "  ---------------------------------------------------------------------------
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vimrc
+autocmd! bufwritepost .vimrc source %
