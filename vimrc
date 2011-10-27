@@ -324,5 +324,6 @@ endif
 "  Misc
 "  ---------------------------------------------------------------------------
 
-" When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vimrc
+" When vimrc, either directly or via symlink, is edited, automatically reload it
+autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
