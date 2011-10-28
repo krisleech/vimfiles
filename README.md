@@ -87,6 +87,14 @@ See `.vimrc` for more.
 
 `:help rails`
 
+### coffee-script
+
+CoffeeScript support
+
+`:CoffeeCompile watch` show compiled js in split
+
+https://github.com/kchmck/vim-coffee-script
+
 ### ruby-block
 
 Provides text-objects for Ruby blocks
