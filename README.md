@@ -189,7 +189,6 @@ Terminal/Interactive programs
 
 `:Conque ls`
 
-  
 Note you can also drop back to the terminal using Ctrl+Z, to get
 back to Vim with `%1`. This is not a feature of Conque.
 
@@ -271,6 +270,13 @@ Find open buffer by path/filename
 Lists method names, provide auto complete
 
 Run `ctags -R` in project root to generate tags
+
+### preview (`,P`)
+
+Preview markup files such as Markdown and RDoc
+
+Each format requires the relevant gem to be installed such as `bluecloth`
+for Markdown and `github-markup` for RDoc.
 
 ### vundle
 
@@ -362,7 +368,7 @@ Note: MacOS comes with the BSD version of ctags which is not compatible.
 
 ## Helpful Stuff
 
-- https://github.com/krisleech/vimfiles/wiki
+- http://github.com/krisleech/vimfiles/wiki
 - http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png
 - http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/
 - http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118
