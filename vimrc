@@ -169,7 +169,6 @@ nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
 
-
 " EXTERNAL COPY / PASTE
 " Press F2 before and after pasting from an external Window, not required for
 " MacVim
@@ -279,6 +278,7 @@ map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
 map <leader>gs :CommandTFlush<cr>\|:CommandT public/stylesheets<cr>
+map <leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
 
 " View routes or Gemfile in large split
 map <leader>gr :topleft :split config/routes.rb<cr>
@@ -287,6 +287,21 @@ map <leader>gg :topleft 100 :split Gemfile<cr>
 " Skip to Models and Views
 map <Leader>m :Rmodel 
 map <Leader>v :Rview 
+
+"  ---------------------------------------------------------------------------
+"  CoffeeScript
+"  ---------------------------------------------------------------------------
+
+let coffee_compile_vert = 1
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent
+
+"  ---------------------------------------------------------------------------
+"  SASS / SCSS
+"  ---------------------------------------------------------------------------
+
+au BufNewFile,BufReadPost *.scss setl foldmethod=indent
+au BufNewFile,BufReadPost *.sass setl foldmethod=indent
+au BufRead,BufNewFile *.scss set filetype=scss
 
 "  ---------------------------------------------------------------------------
 "  GUI
@@ -327,5 +342,6 @@ endif
 "  Misc
 "  ---------------------------------------------------------------------------
 
-" When vimrc is edited, reload it
+" When vimrc, either directly or via symlink, is edited, automatically reload it
 autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
