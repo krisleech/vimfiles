@@ -165,7 +165,6 @@ nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
 
-
 " EXTERNAL COPY / PASTE
 " Press F2 before and after pasting from an external Window, not required for
 " MacVim
@@ -284,6 +283,21 @@ map <leader>gg :topleft 100 :split Gemfile<cr>
 " Skip to Models and Views
 map <Leader>m :Rmodel 
 map <Leader>v :Rview 
+
+"  ---------------------------------------------------------------------------
+"  CoffeeScript
+"  ---------------------------------------------------------------------------
+
+let coffee_compile_vert = 1
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent
+
+"  ---------------------------------------------------------------------------
+"  SASS / SCSS
+"  ---------------------------------------------------------------------------
+
+au BufNewFile,BufReadPost *.scss setl foldmethod=indent
+au BufNewFile,BufReadPost *.sass setl foldmethod=indent
+au BufRead,BufNewFile *.scss set filetype=scss
 
 "  ---------------------------------------------------------------------------
 "  GUI

@@ -38,8 +38,12 @@ Bundle "git://github.com/krisleech/snipmate-snippets.git"
 Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 Bundle "git://github.com/kana/vim-textobj-user.git"
 Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
-Bundle "https://github.com/ervandew/supertab"
+Bundle "git://github.com/ervandew/supertab.git"
 Bundle "jQuery"
+Bundle "git://github.com/kchmck/vim-coffee-script.git"
+Bundle "git://github.com/pangloss/vim-javascript.git"
+Bundle "git://github.com/cakebaker/scss-syntax.vim.git"
+Bundle "git://github.com/tpope/vim-haml.git"
 
 filetype plugin indent on     " and turn it back on!
 
