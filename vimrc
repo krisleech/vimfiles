@@ -280,9 +280,10 @@ map <leader>ga :CommandTFlush<cr>\|:CommandT app/assets<cr>
 map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
 
-" Skip to Models and Views
+" Skip to Model, View or Controller
 map <Leader>m :Rmodel 
 map <Leader>v :Rview 
+map <Leader>c :Rcontroller 
 
 "  ---------------------------------------------------------------------------
 "  CoffeeScript
