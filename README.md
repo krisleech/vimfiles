@@ -278,6 +278,13 @@ Preview markup files such as Markdown and RDoc
 Each format requires the relevant gem to be installed such as `bluecloth`
 for Markdown and `github-markup` for RDoc.
 
+### syntastic
+
+Syntax checking
+
+When a file is saved the syntax is automatically checked and any errors
+reported.
+
 ### vundle
 
 Plugin manager and part of the reason why my vimfiles as so compact
