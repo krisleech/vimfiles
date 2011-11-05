@@ -75,10 +75,25 @@ set colorcolumn=80
 "  Status Line
 "  ---------------------------------------------------------------------------
 
-set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v][%{fugitive#statusline()}]
+" path
+set statusline=%f
+" flags
+set statusline+=%m%r%h%w
+" git branch
+set statusline+=\ %{fugitive#statusline()}
+" encoding
+set statusline+=\ [%{strlen(&fenc)?&fenc:&enc}]
+" rvm
+set statusline+=\ %{rvm#statusline()}
+" line x of y
+set statusline+=\ [line\ %l\/%L]
 
-" RVM status line
-set statusline+=%{rvm#statusline()} 
+" Colour
+hi StatusLine ctermfg=Black ctermbg=White
+
+" Change colour of statusline in insert mode
+au InsertEnter * hi StatusLine ctermbg=DarkBlue
+au InsertLeave * hi StatusLine ctermfg=Black ctermbg=White
 
 "  ---------------------------------------------------------------------------
 "  Mappings
