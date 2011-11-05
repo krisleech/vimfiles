@@ -304,6 +304,9 @@ map <Leader>m :Rmodel
 map <Leader>v :Rview 
 map <Leader>c :Rcontroller 
 
+" Other files to consider Ruby
+au BufRead,BufNewFile Gemfile,Rakefile,Thorfile,config.ru,Vagrantfile,Guardfile,Capfile set ft=ruby
+
 "  ---------------------------------------------------------------------------
 "  CoffeeScript
 "  ---------------------------------------------------------------------------
