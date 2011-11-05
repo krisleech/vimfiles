@@ -55,6 +55,8 @@ colorscheme solarized
 set background=light " or dark
 set t_Co=256
 
+set splitbelow splitright
+
 "  ---------------------------------------------------------------------------
 "  Text Formatting
 "  ---------------------------------------------------------------------------
