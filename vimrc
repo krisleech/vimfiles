@@ -177,6 +177,11 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
 
+" Ignore some binary, versioning and backup files when auto-completing
+set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak
+" Set a lower priority for .old files
+set suffixes+=.old
+
 " Saving and exit
 nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
