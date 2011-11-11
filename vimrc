@@ -237,6 +237,8 @@ map <leader>p :NERDTreeToggle<cr>
 
 " TagList
 set tags=./tags;
+" Support for https://github.com/ivalkeen/guard-ctags-bundler
+set tags+=gems.tags
 map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 60
