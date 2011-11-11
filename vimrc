@@ -281,8 +281,8 @@ vnoremap // :TComment<CR>
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 " Syntastic
-let g:syntastic_auto_loc_list=1
-let g:syntastic_auto_jump=1
+" let g:syntastic_auto_loc_list=1
+" let g:syntastic_auto_jump=1
 
 "  ---------------------------------------------------------------------------
 "  Ruby/Rails
