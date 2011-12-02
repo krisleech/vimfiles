@@ -71,12 +71,7 @@ set expandtab
 set nowrap
 set textwidth=79
 set formatoptions=n
-
-" check if vim has been compiled with colorcolumn support
-" before enabling it
-if exists("+colorcolumn")
-  set colorcolumn=80
-endif
+set colorcolumn=80
 
 "  ---------------------------------------------------------------------------
 "  Status Line
