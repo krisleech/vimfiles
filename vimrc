@@ -236,6 +236,8 @@ let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeWinSize = 50 
+let NERDTreeChDirMode = 2
+let NERDTreeDirArrows = 1
 " open file browser
 map <leader>p :NERDTreeToggle<cr>
 
