@@ -340,6 +340,8 @@ client first, e.g.  `sudo apt-get install mercurial`.
 
 This installs Vim to `/usr/local/bin,` check this is in your `$PATH` before `/usr/bin` which may contain an older system version of Vim.
 
+If you get an error `no terminal library found` install `libncurses5-dev`.
+
 ### Install these vimfiles
 
 Note: You will already have a `~/.vim` folder, either delete or move it.
