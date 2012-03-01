@@ -46,6 +46,7 @@ Bundle "git://github.com/cakebaker/scss-syntax.vim.git"
 Bundle "git://github.com/tpope/vim-haml.git"
 Bundle "git://github.com/tpope/vim-markdown.git"
 Bundle "git://github.com/greyblake/vim-preview.git"
+Bundle "git://github.com/tpope/vim-bundler.git"
 
 filetype plugin indent on     " and turn it back on!
 
