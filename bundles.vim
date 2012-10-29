@@ -35,7 +35,6 @@ Bundle "git://github.com/rson/vim-conque.git"
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle "git://github.com/gmarik/snipmate.vim.git"
 Bundle "git://github.com/krisleech/snipmate-snippets.git"
-Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 Bundle "git://github.com/kana/vim-textobj-user.git"
 Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
 Bundle "git://github.com/ervandew/supertab.git"
