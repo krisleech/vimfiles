@@ -42,7 +42,6 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-set relativenumber
 set undofile
 
 " Auto adjust window sizes when they become current
@@ -51,8 +50,8 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-colorscheme solarized
-set background=light " or dark
+colorscheme railscasts-term
+set background=dark " or light
 set t_Co=256
 
 set splitbelow splitright
@@ -349,9 +348,9 @@ if has("gui_running")
   set guioptions-=b " no scrollbar on the bottom
   set guioptions=aiA 
   set mouse=v
-  set guifont=Monaco:h12 "<- Maybe a good idea when using mac
+  set guifont=Source\ Code\ Pro:h12 "<- Maybe a good idea when using mac
 endif
-set guifont=Monaco:h12
+set guifont=Source\ Code\ Pro:h12
 
 "  ---------------------------------------------------------------------------
 "  Directories
