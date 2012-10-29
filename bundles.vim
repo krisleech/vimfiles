@@ -32,7 +32,7 @@ Bundle "git://github.com/vim-scripts/Gist.vim.git"
 Bundle "git://github.com/vim-scripts/L9.git"
 Bundle "git://github.com/Bogdanp/rbrepl.vim.git"
 Bundle "git://github.com/rson/vim-conque.git"
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://github.com/wincent/command-t.git'
 Bundle "git://github.com/kana/vim-textobj-user.git"
 Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
 Bundle "git://github.com/ervandew/supertab.git"

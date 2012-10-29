@@ -13,15 +13,6 @@ task :install do
 
   system cmds.join(' && ')
 
-  puts 'Install additional snippets'
-
-  cmds = [
-    "cd #{File.join(root, 'bundle', 'snipmate-snippets')}",
-    "rake deploy_local"
-  ]
-
-  system cmds.join(' && ')
-
   puts '*' * 79
   puts
   puts 'All done!'
