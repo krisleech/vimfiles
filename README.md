@@ -269,7 +269,14 @@ Find open buffer by path/filename
 
 Lists method names, provide auto complete
 
-Run `ctags -R` in project root to generate tags
+`,rt` Generates Ruby tags, this will include tags for your code and gems if
+using RVM.
+
+If you are not using RVM you can run `ctags -R` in project root to generate tags.
+
+Or to run directly from within vim `:!ctags -R`.
+
+`Ctrl+]` - skips to the tag under the cursor
 
 ### preview (`,P`)
 
