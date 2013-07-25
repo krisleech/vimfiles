@@ -209,6 +209,8 @@ map <F2> :ConqueTerm zsh<CR>
 nnoremap <silent> <F3> :YRShow<cr>
 inoremap <silent> <F3> <ESC>:YRShow<cr>
 
+let g:yankring_history_dir = '/tmp'
+
 " Press F5 to toggle GUndo tree
 nnoremap <F5> :GundoToggle<CR>
 
